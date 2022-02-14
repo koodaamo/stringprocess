@@ -1,7 +1,1 @@
-texchange - transform text entries
-
-Example:
-
-    >>> from texchange import transform_term
-    >>> transform_term("Hyvää - Päivää Oy", "lc|as|ws|le")
-    'hyvaa-paivaa'
+stringprocess - process text entries
