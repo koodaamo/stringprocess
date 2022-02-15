@@ -40,7 +40,7 @@ def quote_replacer(term):
 
 ```
 
-To use the processor, it is only necessary that the module is imported before the registry is accessed (the decorator does the registration). So:
+To use the processor, it is only necessary that the module is imported before registry is accessed or terms are processed (the decorator does the registration). So:
 
 ```python3
 
