@@ -31,7 +31,7 @@ Writing a new one is as simple as adding a function to a, say,
 
 ```python3
 
-from stringprocess.processors import converter
+from stringprocess.processors.registry import converter
 
 @converter("qr")
 def quote_replacer(term):
@@ -40,7 +40,19 @@ def quote_replacer(term):
 
 ```
 
-To use the processor, it is only necessary that the module is imported
-before the registry is accessed (the decorator does the registration).
+To use the processor, it is only necessary that the module is imported before the registry is accessed (the decorator does the registration). So:
+
+```python3
+
+>>> import myconverters
+>>> from stringprocess import process_terms
+
+>>> terms = [
+   'he said "who knows" and was silent',
+   'and I responded "yes, who knows" and shrugged'
+]
+>>> tuple(process_terms(terms))
+("he said 'who knows' and was silent", "and I responded 'yes, who knows' and shrugged")
+```
 
 The built-in ones are registered automatically when the registry is imported.
