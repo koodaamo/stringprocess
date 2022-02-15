@@ -51,7 +51,7 @@ To use the processor, it is only necessary that the module is imported before th
    'he said "who knows" and was silent',
    'and I responded "yes, who knows" and shrugged'
 ]
->>> tuple(process_terms(terms))
+>>> tuple(process_terms('qr', terms))
 ("he said 'who knows' and was silent", "and I responded 'yes, who knows' and shrugged")
 ```
 
