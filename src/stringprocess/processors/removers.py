@@ -10,7 +10,7 @@ from .registry import remover
 
 @remover("le")
 def legal_entity_stripping(term):
-   "use cleanco to remove legal entity abbreviations"
+   "use cleanco to remove legal entity abbreviations such as inc. or ltd."
    return basename(term)
 
 # regexps used in the following whitespace_removal transformer
