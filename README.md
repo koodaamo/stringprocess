@@ -24,7 +24,7 @@ There are currently three types of processors:
 * **converters** replace parts of text
 * **validators** drop whole input based on criteria
 
-The built-in processors are listed in PROCESSORS.md.
+The built-in processors are listed in [PROCESSORS.md](PROCESSORS.md).
 
 Writing a new one is as simple as adding a function to a, say,
 `myconverters.py` module:
