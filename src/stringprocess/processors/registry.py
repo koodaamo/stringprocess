@@ -26,6 +26,7 @@ def converter(registration_key:str):
       "the actual decorator"
 
       # register the converter
+      func.type = TYPES.CONVERTER
       registry[registration_key] = func
 
       @wraps(func)
@@ -46,6 +47,7 @@ def remover(registration_key:str):
       "the actual decorator"
 
       # register the remover
+      func.type = TYPES.REMOVER
       registry[registration_key] = func
 
       @wraps(func)
@@ -65,7 +67,8 @@ def validator(registration_key:str):
    def registrationdecorator(func):
       "the actual decorator"
 
-      # register the remover
+      # register the validator
+      func.type = TYPES.VALIDATOR
       registry[registration_key] = func
 
       @wraps(func)
