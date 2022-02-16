@@ -1,5 +1,7 @@
 # stringprocess - process text entries
 
+[![Python application](https://github.com/koodaamo/stringprocess/actions/workflows/python-app.yml/badge.svg)](https://github.com/koodaamo/stringprocess/actions/workflows/python-app.yml)
+
 This is a simple library for easily customizable text processing pipelines.
 
 It provides:
